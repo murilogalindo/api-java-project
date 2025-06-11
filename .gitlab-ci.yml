@@ -1,0 +1,25 @@
+stages:
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
+
+test_api:
+  stage:
+  - test
+  - build
+  - deploy
+  image: maven:3.9.2-eclipse-temurin-20
+  script:
+    - mvn clean
+  only:
+    - main
+  artifacts:
+    when: always
+    paths:
+      - target/extent-report.html
+    expire_in: 1 week

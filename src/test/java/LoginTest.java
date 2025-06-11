@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
-public class LoginTest extends src.test.java.BaseTest {
+public class LoginTest extends BaseTest {
 
     @Test
     public void shouldLoginAndReturnToken() {

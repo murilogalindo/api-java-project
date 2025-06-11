@@ -28,7 +28,7 @@ public class AddProductsTest extends BaseTest {
                 .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.JSON)
                 .body("{ " +
-                        "\"title\": \"Produto Teste5\"," +
+                        "\"title\": \"Produto Teste6\"," +
                         "\"description\": \"Desconto\"," +
                         "\"price\": 34," +
                         "\"discountPercentage\": 4.5," +
@@ -44,7 +44,7 @@ public class AddProductsTest extends BaseTest {
                 .statusCode(201)
                 .log().all()
                 .body("id", notNullValue())
-                .body("title", equalTo("Produto Teste5"))
+                .body("title", equalTo("Produto Teste6"))
                 .body("price", equalTo((34))); // preço enviado = 34
     }
 

@@ -6,11 +6,15 @@ public class ExtentManager {
     private static final ExtentReports extentReports = new ExtentReports();
 
     public synchronized static ExtentReports getReporter() {
-        ExtentSparkReporter reporter = new ExtentSparkReporter("target/extent-report.html");
-        reporter.config().setReportName("Sicredi API Test Report");
-        reporter.config().setDocumentTitle("Sicredi API - Test Results");
+        try {
+            ExtentSparkReporter reporter = new ExtentSparkReporter("target/extent-report.html");
+            reporter.config().setReportName("Sicredi API Test Report");
+            reporter.config().setDocumentTitle("Sicredi API - Test Results");
 
-        extentReports.attachReporter(reporter);
+            extentReports.attachReporter(reporter);
+        } catch (Exception e) {
+            System.out.println("Erro ao criar ExtentReport: " + e.getMessage());
+        }
         return extentReports;
     }
 }

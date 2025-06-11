@@ -15,6 +15,8 @@ test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20
   script:
+    - mkdir -p target
+    - mvn clean test || TEST_RESULT=$?
     - echo "Iniciando testes..."
     - |
       mvn clean test || TEST_RESULT=$?

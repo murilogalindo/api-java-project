@@ -18,8 +18,3 @@ test_api:
     - mvn clean
   only:
     - main
-  artifacts:
-    when: always
-    paths:
-      - target/extent-report.html
-    expire_in: 1 week

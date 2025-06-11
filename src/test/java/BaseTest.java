@@ -19,8 +19,12 @@ public abstract class BaseTest {
 
     @AfterAll
     public static void tearDown() {
-        if (extent != null) {
-            extent.flush();
+        try {
+            if (extent != null) {
+                extent.flush();
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao gerar relatório: " + e.getMessage());
         }
     }
 }

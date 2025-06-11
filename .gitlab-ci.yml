@@ -42,4 +42,3 @@ deploy_app:
     - apk add --no-cache openssh
   script:
     - echo "Fazendo deploy..."
-    - scp target/*.jar user@seu-servidor:/caminho/do/projeto

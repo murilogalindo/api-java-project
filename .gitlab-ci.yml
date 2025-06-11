@@ -10,7 +10,7 @@ cache:
   paths:
     - .m2/repository
 
-# 🧪 TESTES AUTOMATIZADOS
+# teste automatizados
 test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20
@@ -22,7 +22,7 @@ test_api:
       - target/extent-report.html
     expire_in: 1 week
 
-# 🛠️ BUILD DO PROJETO
+# build do projeto
 build_app:
   stage: build
   image: maven:3.9.2-eclipse-temurin-20
@@ -32,7 +32,7 @@ build_app:
     paths:
       - target/*.jar
 
-# 🚀 DEPLOY (EXEMPLO LOCAL OU PARA SERVIDOR REMOTO VIA SCP)
+# Deploy local
 deploy_app:
   stage: deploy
   image: alpine:latest
@@ -42,5 +42,4 @@ deploy_app:
     - apk add --no-cache openssh
   script:
     - echo "Fazendo deploy..."
-    # Exemplo: envio via SCP (você pode trocar por rsync, FTP, kubectl etc.)
     - scp target/*.jar user@seu-servidor:/caminho/do/projeto

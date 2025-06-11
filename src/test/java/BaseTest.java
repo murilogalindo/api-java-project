@@ -19,6 +19,8 @@ public abstract class BaseTest {
 
     @AfterAll
     public static void tearDown() {
-        extent.flush();
+        if (extent != null) {
+            extent.flush();
+        }
     }
 }

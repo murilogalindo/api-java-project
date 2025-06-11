@@ -9,8 +9,6 @@ public class GetTests extends BaseTest {
     @Test
     public void resultSholdBe200 (){
         test = extent.createTest("GET /test - Deve retornar status 200 com corpo válido");
-        test.info("Iniciando teste de status /test");
-
         given()
                 .when()
                 .get("/test")
@@ -24,8 +22,6 @@ public class GetTests extends BaseTest {
     @Test
     public void resultSholdBe404 (){
         test = extent.createTest("GET /test - Deve retornar status 404 url inválida - Not Found");
-        test.info("Iniciando teste de status /test");
-
         Response response = given()
                 .when()
                 .get("/tes");

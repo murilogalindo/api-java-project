@@ -24,8 +24,6 @@ public class AddProductsTest extends BaseTest {
     @Test
     public void shouldCreateProductSuccessfully() {
         test = extent.createTest("GET /test -Deve adicionar um novo produto status 201");
-        test.info("Iniciando teste de status /test");
-
         given()
                 .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.JSON)

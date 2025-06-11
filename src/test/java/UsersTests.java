@@ -7,8 +7,6 @@ public class UsersTests extends BaseTest {
     @Test
     public void shouldReturnListOfUsers() {
         test = extent.createTest("GET /test - Deve listar todos os usuários status 200");
-        test.info("Iniciando teste de status /test");
-
         given()
                 .when()
                 .get("/users")
@@ -20,8 +18,6 @@ public class UsersTests extends BaseTest {
     @Test
     public void shouldReturn404ForInvalidEndpoint() {
         test = extent.createTest("GET /test - Deve mostrar erro 404 de url inválida");
-        test.info("Iniciando teste de status /test");
-
         given()
                 .when()
                 .get("/userz")  // endpoint errado

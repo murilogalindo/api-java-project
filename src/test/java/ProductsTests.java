@@ -26,8 +26,6 @@ public class ProductsTests extends BaseTest {
     @Test
     public void shouldGetProductsList() {
         test = extent.createTest("GET /test - Deve listar todos os produtos status 200");
-        test.info("Iniciando teste de status /test");
-
         given()
                 .header("Authorization", "Bearer " + token)
                 .when()
@@ -40,8 +38,6 @@ public class ProductsTests extends BaseTest {
     @Test
     public void shouldAddProductAndRetrieveById() {
         test = extent.createTest("GET /test - Deve listar produtos por ID status 200");
-        test.info("Iniciando teste de status /test");
-
         int id = 192;
                 given()
                         .when()

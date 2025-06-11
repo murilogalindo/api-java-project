@@ -15,12 +15,11 @@ test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20
   script:
-    - echo "--- RODANDO TESTES ---"
-    - mvn test -X
-    - echo "--- LISTANDO PASTA TARGET ---"
+    - echo "Rodando testes..."
+    - mvn clean test || { echo 'Testes falharam!'; exit 1; }
+    - echo "Verificando relatório"
     - ls -lh target/
-    - echo "--- PROCURANDO extent-report.html ---"
-    - find . -name "extent-report.html" -exec ls -lh {} \;
+    - find . -name "extent-report.html"
   artifacts:
     when: always
     paths:

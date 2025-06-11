@@ -3,13 +3,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-public class ProductsTests extends src.test.java.BaseTest {
+public class ProductsTests extends BaseTest {
 
     private String token;
 
 
     @BeforeEach
     public void authenticate() {
+        test = extent.createTest("GET /test - Deve validar token status 200 - Token válido");
         token =
                 given()
                         .contentType(ContentType.JSON)
@@ -24,6 +25,7 @@ public class ProductsTests extends src.test.java.BaseTest {
 
     @Test
     public void shouldGetProductsList() {
+        test = extent.createTest("GET /test - Deve listar todos os produtos status 200");
         given()
                 .header("Authorization", "Bearer " + token)
                 .when()
@@ -35,7 +37,8 @@ public class ProductsTests extends src.test.java.BaseTest {
 
     @Test
     public void shouldAddProductAndRetrieveById() {
-        int id = 2;
+        test = extent.createTest("GET /test - Deve listar produtos por ID status 200");
+        int id = 192;
                 given()
                         .when()
                         .get("/products/"+id)

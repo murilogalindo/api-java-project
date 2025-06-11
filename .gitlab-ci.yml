@@ -16,6 +16,11 @@ test_api:
   image: maven:3.9.2-eclipse-temurin-20
   script:
     - mvn clean test
+    - echo "--- TARGET DIR ---"
+    - ls -lh target/
+    - echo "--- FULL PROJECT DIR ---"
+    - find . -name "extent-report.html"
+
   artifacts:
     when: always
     paths:
@@ -30,7 +35,7 @@ build_app:
     - mvn clean package -DskipTests
   artifacts:
     paths:
-      - target/*.jar
+      - target/extent-report.html
 
 # Deploy local
 deploy_app:

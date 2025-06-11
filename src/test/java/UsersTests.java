@@ -12,6 +12,7 @@ public class UsersTests extends src.test.java.BaseTest {
                 .get("/users")
                 .then()
                 .statusCode(200)
+                .log().all()
                 .body("size()", greaterThan(0));
     }
 }

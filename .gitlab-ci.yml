@@ -16,9 +16,13 @@ test_api:
   image: maven:3.9.2-eclipse-temurin-20
   script:
     - echo "Iniciando testes..."
-    - mvn clean test || TEST_RESULT=$?
-    - echo "Resultado Maven: ${TEST_RESULT:-0}"
-    - if [ "${TEST_RESULT:-0}" -ne 0 ]; then echo "Testes falharam ou retornaram código diferente de 0"; exit $TEST_RESULT; fi
+    - |
+      mvn clean test || TEST_RESULT=$?
+      echo "Resultado Maven: ${TEST_RESULT:-0}"
+      if [ "${TEST_RESULT:-0}" -ne 0 ]; then
+        echo "❌ Testes falharam ou retornaram código diferente de 0"
+        exit $TEST_RESULT
+      fi
     - echo "Listando arquivos na pasta target/"
     - ls -lh target/
     - echo "Buscando extent-report.html..."
@@ -28,6 +32,7 @@ test_api:
     paths:
       - target/extent-report.html
     expire_in: 1 week
+
 # build do projeto
 build_app:
   stage: build

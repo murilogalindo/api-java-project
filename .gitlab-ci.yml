@@ -1,23 +1,46 @@
-image: maven:3.1.2
 stages:
-  - test
-
-cache:
-  paths:
-    - target
-
-test_api:
-  stage:
   - test
   - build
   - deploy
-  image: maven:3.1.2-eclipse-temurin-20
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
+
+# 🧪 TESTES AUTOMATIZADOS
+test_api:
+  stage: test
+  image: maven:3.9.2-eclipse-temurin-20
   script:
     - mvn clean test
   artifacts:
     when: always
     paths:
-      - target/gitlab-pipeline.jar
+      - target/extent-report.html
     expire_in: 1 week
+
+# 🛠️ BUILD DO PROJETO
+build_app:
+  stage: build
+  image: maven:3.9.2-eclipse-temurin-20
+  script:
+    - mvn clean package -DskipTests
+  artifacts:
+    paths:
+      - target/*.jar
+
+# 🚀 DEPLOY (EXEMPLO LOCAL OU PARA SERVIDOR REMOTO VIA SCP)
+deploy_app:
+  stage: deploy
+  image: alpine:latest
   only:
     - main
+  before_script:
+    - apk add --no-cache openssh
+  script:
+    - echo "Fazendo deploy..."
+    # Exemplo: envio via SCP (você pode trocar por rsync, FTP, kubectl etc.)
+    - scp target/*.jar user@seu-servidor:/caminho/do/projeto

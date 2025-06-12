@@ -20,8 +20,12 @@ public abstract class BaseTest {
     @AfterAll
     public static void tearDown() {
         try {
+            System.out.println("Finalizando testes, gerando relatório...");
             if (extent != null) {
                 extent.flush();
+                System.out.println("Relatório gerado com sucesso.");
+            } else {
+                System.out.println("ExtentReports está nulo.");
             }
         } catch (Exception e) {
             System.out.println("Erro ao gerar relatório: " + e.getMessage());

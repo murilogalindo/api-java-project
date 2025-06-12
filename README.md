@@ -12,7 +12,7 @@ Validar os principais endpoints da API da Sicredi, verificando:
 - Comportamento em cenários válidos e inválidos
 
 ## Tipos de Testes Implementados
-- Teste funcional: Verifica se o endpoint responde corretamente (status 200, 201 etc.)
+- Teste funcional: Verifica se o endpoint responde corretamente (status 200, 201, 401, 404 etc.)
 - Teste de contrato: Confirma a estrutura e tipos dos campos no JSON de resposta
 - Teste negativo: Simula dados inválidos para verificar tratamento de erros
 

@@ -16,7 +16,7 @@ public class GetTest extends BaseTest {
                 .log().status() // log da resposta
                 .statusCode(200)
                 .body("status", equalTo("ok"));
-        test.pass("Status 200 retornado com sucesso e corpo com status = 'ok'");
+        test.pass("Status 200 retornado com sucesso e response com status = 'ok'");
 
     }
     @Test

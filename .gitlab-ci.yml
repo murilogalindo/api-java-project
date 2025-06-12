@@ -14,17 +14,12 @@ cache:
 test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20
-  only:
-    - main  # ← Garante execução apenas na branch main
   script:
     - echo "Iniciando testes..."
-    - find src/test/java -name "*Test*.java"
-    - mvn clean test -X || true
-    - mkdir -p target
-    - echo "Listando arquivos na pasta target/"
+    - mvn clean test
+    - echo "Verificando existência do relatório:"
     - ls -lh target/
-    - echo "Buscando extent-report.html..."
-    - find . -name "extent-report.html"
+    - cat target/extent-report.html | head -n 10
   artifacts:
     when: always
     paths:

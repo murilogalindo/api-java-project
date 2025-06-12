@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
-public class GetTests extends BaseTest {
+public class GetTest extends BaseTest {
 
     @Test
     public void deveMostrarQueAplicacoEstaFuncionando (){

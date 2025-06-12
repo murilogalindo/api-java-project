@@ -66,9 +66,9 @@ src/
     └── java
         ├── BaseTest.java
         ├── AuthTests.java
-        ├── ProductsTests.java
-        ├── UsersTests.java
-        └── HealthTests.java
+        ├── ProductsTest.java
+        ├── UsersTest.java
+        └── HealthTest.java
 ```
 
 

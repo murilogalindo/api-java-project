@@ -3,7 +3,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-public class ProductsTests extends BaseTest {
+public class ProductsTest extends BaseTest {
 
     private String token;
 

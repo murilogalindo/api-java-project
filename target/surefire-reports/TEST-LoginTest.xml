@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="1.65" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/murilo/IdeaProjects/api_project/target/test-classes:/home/murilo/IdeaProjects/api_project/target/classes:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/home/murilo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/murilo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/murilo/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/home/murilo/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/home/murilo/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/murilo/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/murilo/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/murilo/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/murilo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/murilo/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/murilo/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/murilo/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/murilo/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/murilo/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-oracle/lib"/>
+    <property name="sun.java.command" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612071759798_3.jar /home/murilo/IdeaProjects/api_project/target/surefire 2025-06-12T07-17-59_638-jvmRun1 surefire-20250612071759798_1tmp surefire_0-20250612071759798_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/murilo/IdeaProjects/api_project/target/test-classes:/home/murilo/IdeaProjects/api_project/target/classes:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/home/murilo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/murilo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/murilo/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/home/murilo/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/home/murilo/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/murilo/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/murilo/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/murilo/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/murilo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/murilo/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/murilo/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/murilo/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/murilo/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/murilo/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/murilo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-oracle"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/murilo/IdeaProjects/api_project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612071759798_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="murilo"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-60-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/murilo/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="/home/murilo/IdeaProjects/api_project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="deveTentarLogarComNomeDeUsarioInvalid" classname="LoginTest" time="0.506">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 33
+Content-Type: application/json; charset=utf-8
+Date: Thu, 12 Jun 2025 10:18:06 GMT
+Etag: W/"21-dBEoW0UmTF+EGUMaprEp9/8zNNA"
+Server: railway-edge
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Cats on Keyboards
+X-Railway-Edge: railway/us-east4-eqdc4a
+X-Railway-Request-Id: ziuVT0hYRJCkwDUtg4a9AQ
+X-Ratelimit-Limit: 100
+X-Ratelimit-Remaining: 99
+X-Ratelimit-Reset: 1749723492
+X-Xss-Protection: 1; mode=block
+
+{
+    "message": "Invalid credentials"
+}
+Erro: usuário inválido
+]]></system-out>
+  </testcase>
+  <testcase name="deveFazerLoginERetornarUmTokenValido" classname="LoginTest" time="0.493">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 930
+Content-Type: application/json; charset=utf-8
+Date: Thu, 12 Jun 2025 10:18:07 GMT
+Etag: W/"3a2-Hfddys9vYQBhCzzNdYHdDjiVM4E"
+Server: railway-edge
+Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc0OTcyNzA4N30.bZETDS1Cjkx1Emjwu0acwTJuu28DgvI3QyvUZBNIMBs; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:18:07 GMT; HttpOnly; Secure
+Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc1MjMxNTQ4N30.jiMJ6eFaWOym0eNBch-U3sZHgGluZpvLg_OS-sljJE0; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:18:07 GMT; HttpOnly; Secure
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Cats on Keyboards
+X-Railway-Edge: railway/us-east4-eqdc4a
+X-Railway-Request-Id: EkJTvlXTSi6i6V_XAax-fw
+X-Ratelimit-Limit: 100
+X-Ratelimit-Remaining: 97
+X-Ratelimit-Reset: 1749723492
+X-Xss-Protection: 1; mode=block
+
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc0OTcyNzA4N30.bZETDS1Cjkx1Emjwu0acwTJuu28DgvI3QyvUZBNIMBs",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc1MjMxNTQ4N30.jiMJ6eFaWOym0eNBch-U3sZHgGluZpvLg_OS-sljJE0",
+    "id": 1,
+    "username": "emilys",
+    "email": "emily.johnson@x.dummyjson.com",
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "gender": "female",
+    "image": "https://dummyjson.com/icon/emilys/128"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deveTentarLogarComSenhaInvalida" classname="LoginTest" time="0.533">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Access-Control-Allow-Origin: *
+Content-Length: 33
+Content-Type: application/json; charset=utf-8
+Date: Thu, 12 Jun 2025 10:18:07 GMT
+Etag: W/"21-dBEoW0UmTF+EGUMaprEp9/8zNNA"
+Server: railway-edge
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Dns-Prefetch-Control: off
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Cats on Keyboards
+X-Railway-Edge: railway/us-east4-eqdc4a
+X-Railway-Request-Id: f76sfzxIRr6xezURAax-fw
+X-Ratelimit-Limit: 100
+X-Ratelimit-Remaining: 96
+X-Ratelimit-Reset: 1749723492
+X-Xss-Protection: 1; mode=block
+
+{
+    "message": "Invalid credentials"
+}
+Erro: senha inválida
+]]></system-out>
+  </testcase>
+</testsuite>

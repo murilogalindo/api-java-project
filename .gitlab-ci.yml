@@ -10,7 +10,7 @@ cache:
   paths:
     - .m2/repository
 
-# teste automatizados
+# teste automatizados (sempre executa quando ocorre mudança na branch main)
 test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20

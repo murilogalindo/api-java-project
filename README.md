@@ -71,10 +71,17 @@ src/
 
 **Melhorias**
 
+Melhoria 1:
 Endpoint GET/test - inserir na documentação mais cenários de erros, como 404 Not Fould. (com uma tratativa)
+
+Melhoria 2:
 Endpoint GET/user - poderia ter mais documentado mais cenários de erros, como 404 Not Fould. (com uma tratativa)
 - Também alguma trativa
+
+Melhoria 3:
 Endpoint POST/auth/login - poderia ter mais documentado mais cenários de erros, como 404 Invalid credentials, 401 Unauthorized, 500 Internal Server Error.
+
+Melhoria 4:
 Endpoint POST /products/add - inserir mais status de cenários de erro, como 404 Not Found
 
 **Bugs**

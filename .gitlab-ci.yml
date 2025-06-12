@@ -18,8 +18,8 @@ test_api:
     - main  # ← Garante execução apenas na branch main
   script:
     - echo "Iniciando testes..."
-    - find src/test/java -name "*.java"
-    - mvn clean test || true
+    - find src/test/java -name "*Test*.java"
+    - mvn clean test -X || true
     - mkdir -p target
     - echo "Listando arquivos na pasta target/"
     - ls -lh target/

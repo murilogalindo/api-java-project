@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="1.65" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="1.827" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-oracle/lib"/>
-    <property name="sun.java.command" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612071759798_3.jar /home/murilo/IdeaProjects/api_project/target/surefire 2025-06-12T07-17-59_638-jvmRun1 surefire-20250612071759798_1tmp surefire_0-20250612071759798_2tmp"/>
+    <property name="sun.java.command" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612072956076_3.jar /home/murilo/IdeaProjects/api_project/target/surefire 2025-06-12T07-29-55_950-jvmRun1 surefire-20250612072956076_1tmp surefire_0-20250612072956076_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/murilo/IdeaProjects/api_project/target/test-classes:/home/murilo/IdeaProjects/api_project/target/classes:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/home/murilo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/murilo/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/murilo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/murilo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/murilo/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar:/home/murilo/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/home/murilo/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/murilo/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/murilo/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/murilo/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/murilo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/murilo/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/murilo/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/murilo/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/murilo/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/murilo/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/home/murilo/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/home/murilo/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/home/murilo/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612071759798_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/murilo/IdeaProjects/api_project/target/surefire/surefirebooter-20250612072956076_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
     <property name="user.name" value="murilo"/>
@@ -52,12 +52,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="deveTentarLogarComNomeDeUsarioInvalid" classname="LoginTest" time="0.506">
+  <testcase name="deveTentarLogarComNomeDeUsarioInvalid" classname="LoginTest" time="0.489">
     <system-out><![CDATA[HTTP/1.1 400 Bad Request
 Access-Control-Allow-Origin: *
 Content-Length: 33
 Content-Type: application/json; charset=utf-8
-Date: Thu, 12 Jun 2025 10:18:06 GMT
+Date: Thu, 12 Jun 2025 10:30:06 GMT
 Etag: W/"21-dBEoW0UmTF+EGUMaprEp9/8zNNA"
 Server: railway-edge
 Strict-Transport-Security: max-age=15552000; includeSubDomains
@@ -68,10 +68,10 @@ X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Cats on Keyboards
 X-Railway-Edge: railway/us-east4-eqdc4a
-X-Railway-Request-Id: ziuVT0hYRJCkwDUtg4a9AQ
+X-Railway-Request-Id: ar9aXHOSTLqkUJdBCx5-qw
 X-Ratelimit-Limit: 100
-X-Ratelimit-Remaining: 99
-X-Ratelimit-Reset: 1749723492
+X-Ratelimit-Remaining: 97
+X-Ratelimit-Reset: 1749724212
 X-Xss-Protection: 1; mode=block
 
 {
@@ -80,16 +80,16 @@ X-Xss-Protection: 1; mode=block
 Erro: usuário inválido
 ]]></system-out>
   </testcase>
-  <testcase name="deveFazerLoginERetornarUmTokenValido" classname="LoginTest" time="0.493">
+  <testcase name="deveFazerLoginERetornarUmTokenValido" classname="LoginTest" time="0.617">
     <system-out><![CDATA[HTTP/1.1 200 OK
 Access-Control-Allow-Origin: *
 Content-Length: 930
 Content-Type: application/json; charset=utf-8
-Date: Thu, 12 Jun 2025 10:18:07 GMT
-Etag: W/"3a2-Hfddys9vYQBhCzzNdYHdDjiVM4E"
+Date: Thu, 12 Jun 2025 10:30:07 GMT
+Etag: W/"3a2-0kO0R2rocwdce9Xa23im/O6/NCE"
 Server: railway-edge
-Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc0OTcyNzA4N30.bZETDS1Cjkx1Emjwu0acwTJuu28DgvI3QyvUZBNIMBs; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:18:07 GMT; HttpOnly; Secure
-Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc1MjMxNTQ4N30.jiMJ6eFaWOym0eNBch-U3sZHgGluZpvLg_OS-sljJE0; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:18:07 GMT; HttpOnly; Secure
+Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjQyMDcsImV4cCI6MTc0OTcyNzgwN30.9xWA6NO2fOSNd-aBL9aAMNqD8IFgYdAtQ2-FrWcOLiI; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:30:07 GMT; HttpOnly; Secure
+Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjQyMDcsImV4cCI6MTc1MjMxNjIwN30.p6MnNKvi-QzbSbDjRChP9Kd5h1UBVT5N4sFLxYEB3X0; Max-Age=3600; Path=/; Expires=Thu, 12 Jun 2025 11:30:07 GMT; HttpOnly; Secure
 Strict-Transport-Security: max-age=15552000; includeSubDomains
 Vary: Accept-Encoding
 X-Content-Type-Options: nosniff
@@ -98,15 +98,15 @@ X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Cats on Keyboards
 X-Railway-Edge: railway/us-east4-eqdc4a
-X-Railway-Request-Id: EkJTvlXTSi6i6V_XAax-fw
+X-Railway-Request-Id: i1h13NYcSrK2fql0g4a9AQ
 X-Ratelimit-Limit: 100
-X-Ratelimit-Remaining: 97
-X-Ratelimit-Reset: 1749723492
+X-Ratelimit-Remaining: 96
+X-Ratelimit-Reset: 1749724212
 X-Xss-Protection: 1; mode=block
 
 {
-    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc0OTcyNzA4N30.bZETDS1Cjkx1Emjwu0acwTJuu28DgvI3QyvUZBNIMBs",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjM0ODcsImV4cCI6MTc1MjMxNTQ4N30.jiMJ6eFaWOym0eNBch-U3sZHgGluZpvLg_OS-sljJE0",
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjQyMDcsImV4cCI6MTc0OTcyNzgwN30.9xWA6NO2fOSNd-aBL9aAMNqD8IFgYdAtQ2-FrWcOLiI",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDk3MjQyMDcsImV4cCI6MTc1MjMxNjIwN30.p6MnNKvi-QzbSbDjRChP9Kd5h1UBVT5N4sFLxYEB3X0",
     "id": 1,
     "username": "emilys",
     "email": "emily.johnson@x.dummyjson.com",
@@ -117,12 +117,12 @@ X-Xss-Protection: 1; mode=block
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deveTentarLogarComSenhaInvalida" classname="LoginTest" time="0.533">
+  <testcase name="deveTentarLogarComSenhaInvalida" classname="LoginTest" time="0.611">
     <system-out><![CDATA[HTTP/1.1 400 Bad Request
 Access-Control-Allow-Origin: *
 Content-Length: 33
 Content-Type: application/json; charset=utf-8
-Date: Thu, 12 Jun 2025 10:18:07 GMT
+Date: Thu, 12 Jun 2025 10:30:08 GMT
 Etag: W/"21-dBEoW0UmTF+EGUMaprEp9/8zNNA"
 Server: railway-edge
 Strict-Transport-Security: max-age=15552000; includeSubDomains
@@ -133,10 +133,10 @@ X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Cats on Keyboards
 X-Railway-Edge: railway/us-east4-eqdc4a
-X-Railway-Request-Id: f76sfzxIRr6xezURAax-fw
+X-Railway-Request-Id: kzy-pN16RZaz9_tBg4a9AQ
 X-Ratelimit-Limit: 100
-X-Ratelimit-Remaining: 96
-X-Ratelimit-Reset: 1749723492
+X-Ratelimit-Remaining: 95
+X-Ratelimit-Reset: 1749724212
 X-Xss-Protection: 1; mode=block
 
 {

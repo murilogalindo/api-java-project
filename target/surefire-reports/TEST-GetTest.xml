@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AddProductsTest" time="1.123" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="GetTest" time="1.086" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -52,40 +52,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="deveCriarProdutos" classname="AddProductsTest" time="1.012">
-    <system-out><![CDATA[HTTP/1.1 201 Created
-Access-Control-Allow-Origin: *
-Content-Length: 252
-Content-Type: application/json; charset=utf-8
-Date: Thu, 12 Jun 2025 10:30:02 GMT
-Etag: W/"fc-6cO/l0UvpE+TsQStCcxNKfDeZHA"
-Server: railway-edge
-Strict-Transport-Security: max-age=15552000; includeSubDomains
-Vary: Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Dns-Prefetch-Control: off
-X-Download-Options: noopen
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Cats on Keyboards
-X-Railway-Edge: railway/us-east4-eqdc4a
-X-Railway-Request-Id: nowiOsCUQwaujGdaAax-fw
-X-Ratelimit-Limit: 100
-X-Ratelimit-Remaining: 99
-X-Ratelimit-Reset: 1749724212
-X-Xss-Protection: 1; mode=block
-
-{
-    "id": 195,
-    "title": "Produto Teste6",
-    "price": 34,
-    "discountPercentage": 4.5,
-    "stock": 52,
-    "rating": 3.56,
-    "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
-    "description": "Desconto",
-    "brand": "Impression of Acqua Di Gios",
-    "category": "fragrances"
-}
+  <testcase name="deveMostrarQueAplicacoEstaFuncionando" classname="GetTest" time="0.469">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="deveRetornarErroAplicacaoNaoEstaFuncionandoCorretamente" classname="GetTest" time="0.493">
+    <system-out><![CDATA[Content-Type: null
 ]]></system-out>
   </testcase>
 </testsuite>

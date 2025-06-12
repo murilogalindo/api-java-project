@@ -1,7 +1,7 @@
-UsersTests.class
 AddProductsTest.class
-GetTests.class
+GetTest.class
+UsersTest.class
+ProductsTest.class
 LoginTest.class
-ProductsTests.class
 util/ExtentManager.class
 BaseTest.class

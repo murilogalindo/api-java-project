@@ -2,9 +2,6 @@
 
 ## Plano de Testes – API Sicredi
 
-
-## Getting started
-
 Este projeto automatiza a validação da API pública da Sicredi, garantindo que seus endpoints estejam funcionais e de acordo com o esperado.
 
 ## Objetivo
@@ -72,6 +69,8 @@ src/
         ├── ProductsTests.java
         ├── UsersTests.java
         └── HealthTests.java
+```
+
 
 ## Geração de relatórios
 

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class GetTests extends BaseTest {
 
     @Test
-    public void resultSholdBe200 (){
+    public void deveMostrarQueAplicacoEstaFuncionando (){
         test = extent.createTest("GET /test - Deve retornar status 200 com corpo válido");
         given()
                 .when()
@@ -20,7 +20,7 @@ public class GetTests extends BaseTest {
 
     }
     @Test
-    public void resultSholdBe404 (){
+    public void deveRetornarErroAplicacaoNaoEstaFuncionandoCorretamente (){
         test = extent.createTest("GET /test - Deve retornar status 404 url inválida - Not Found");
         Response response = given()
                 .when()

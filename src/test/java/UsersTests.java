@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.*;
 public class UsersTests extends BaseTest {
 
     @Test
-    public void shouldReturnListOfUsers() {
+    public void deveRetornarAListaDeUsuarios() {
         test = extent.createTest("GET /test - Deve listar todos os usuários status 200");
         given()
                 .when()
@@ -16,7 +16,7 @@ public class UsersTests extends BaseTest {
                 .body("size()", greaterThan(0));
     }
     @Test
-    public void shouldReturn404ForInvalidEndpoint() {
+    public void deveRetornarStatus404ParaEndpointInvalido() {
         test = extent.createTest("GET /test - Deve mostrar erro 404 de url inválida");
         given()
                 .when()

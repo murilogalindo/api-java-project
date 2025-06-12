@@ -9,7 +9,7 @@ public class AddProductsTest extends BaseTest {
     private String token;
 
     @BeforeEach
-    public void authenticate() {
+    public void autenticacao() {
         token = given()
                 .contentType(ContentType.JSON)
                 .body("{\"username\": \"emilys\", \"password\": \"emilyspass\"}")
@@ -22,7 +22,7 @@ public class AddProductsTest extends BaseTest {
     }
 
     @Test
-    public void shouldCreateProductSuccessfully() {
+    public void deveCriarProdutos() {
         test = extent.createTest("GET /test -Deve adicionar um novo produto status 201");
         given()
                 .header("Authorization", "Bearer " + token)

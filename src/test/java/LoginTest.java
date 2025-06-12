@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void shouldLoginAndReturnToken() {
+    public void deveFazerLoginERetornarUmTokenValido() {
         test = extent.createTest("GET /test - Deve retornar status 200 - Token válido");
         given()
                 .contentType("application/json")
@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
                 .body("accessToken", notNullValue());
     }
     @Test
-    public void shouldLoginAndReturnInvalidCredentialUserName() {
+    public void deveTentarLogarComNomeDeUsarioInvalid() {
         test = extent.createTest("GET /test - Deve retornar status 400 - Nome de usuário inválido");
         given()
                 .contentType("application/json")
@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
                 System.out.println("Erro: usuário inválido");
     }
         @Test
-        public void shouldLoginAndReturnInvalidCredentialPassword() {
+        public void deveTentarLogarComSenhaInvalida() {
             test = extent.createTest("GET /test - Deve retornar status 400 - Senha de usuário inválido");
             given()
                     .contentType("application/json")

@@ -9,7 +9,7 @@ public class ProductsTests extends BaseTest {
 
 
     @BeforeEach
-    public void authenticate() {
+    public void autenticacao() {
         test = extent.createTest("GET /test - Deve validar token status 200 - Token válido");
         token =
                 given()
@@ -24,7 +24,7 @@ public class ProductsTests extends BaseTest {
     }
 
     @Test
-    public void shouldGetProductsList() {
+    public void deveRetornarTodosOsProdutos() {
         test = extent.createTest("GET /test - Deve listar todos os produtos status 200");
         given()
                 .header("Authorization", "Bearer " + token)
@@ -36,7 +36,7 @@ public class ProductsTests extends BaseTest {
     }
 
     @Test
-    public void shouldAddProductAndRetrieveById() {
+    public void deveRetornarOProdudoPorID() {
         test = extent.createTest("GET /test - Deve listar produtos por ID status 200");
         int id = 192;
                 given()

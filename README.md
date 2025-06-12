@@ -1,10 +1,25 @@
 # api_project
 
+## Plano de Testes – API Sicredi
 
 
 ## Getting started
 
-Este projeto contém uma suíte de testes automatizados para a API do desafio Sicredi, desenvolvida utilizando Java, Rest-Assured, JUnit 5 e ExtentReports.
+Este projeto automatiza a validação da API pública da Sicredi, garantindo que seus endpoints estejam funcionais e de acordo com o esperado.
+
+## Objetivo
+
+Validar os principais endpoints da API da Sicredi, verificando:
+- Códigos de status HTTP esperados
+- Estrutura e conteúdo das respostas
+- Comportamento em cenários válidos e inválidos
+
+## Tipos de Testes Implementados
+- Teste funcional: Verifica se o endpoint responde corretamente (status 200, 201 etc.)
+- Teste de contrato: Confirma a estrutura e tipos dos campos no JSON de resposta
+- Teste negativo: Simula dados inválidos para verificar tratamento de erros
+
+## Ferramentas utilizadas
 
 Antes de executar os testes, certifique-se de ter os seguintes itens instalados:
 
@@ -48,14 +63,15 @@ mvn clean test
 
 # Estrutura do projeto
 
+```text
 src/
 └── test/
     └── java
-                    ├── BaseTest.java
-                    ├── AuthTests.java
-                    ├── ProductsTests.java
-                    ├── UsersTests.java
-                    └── HealthTests.java
+        ├── BaseTest.java
+        ├── AuthTests.java
+        ├── ProductsTests.java
+        ├── UsersTests.java
+        └── HealthTests.java
 
 ## Geração de relatórios
 
@@ -65,6 +81,7 @@ src/
 ## CI/CD 
 
 - O projeto foi configurado para rodar na Pipeline
+- A pipeline no GitLab executa automaticamente os testes em cada push na branch main e salva o relatório como artefato.
 - https://gitlab.com/murilogalindo/api_project/-/pipelines
 
 ## Bugs e Melhoras

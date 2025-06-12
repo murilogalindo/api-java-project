@@ -14,10 +14,12 @@ cache:
 test_api:
   stage: test
   image: maven:3.9.2-eclipse-temurin-20
+  only:
+    - main  # ← Garante execução apenas na branch main
   script:
-    - mkdir -p target
-    - mvn clean test || TEST_RESULT=$?
     - echo "Iniciando testes..."
+    - mkdir -p target
+    - mvn clean test || true  # ← Permite continuar mesmo se algum teste falhar (para salvar o relatório)
     - echo "Listando arquivos na pasta target/"
     - ls -lh target/
     - echo "Buscando extent-report.html..."

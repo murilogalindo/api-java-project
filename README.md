@@ -67,6 +67,54 @@ src/
 - O projeto foi configurado para rodar na Pipeline
 - https://gitlab.com/murilogalindo/api_project/-/pipelines
 
+## Bugs e Melhoras
+
+**Melhorias**
+
+Endpoint GET/test - inserir na documentação mais cenários de erros, como 404 Not Fould. (com uma tratativa)
+Endpoint GET/user - poderia ter mais documentado mais cenários de erros, como 404 Not Fould. (com uma tratativa)
+- Também alguma trativa
+Endpoint POST/auth/login - poderia ter mais documentado mais cenários de erros, como 404 Invalid credentials, 401 Unauthorized, 500 Internal Server Error.
+Endpoint POST /products/add - inserir mais status de cenários de erro, como 404 Not Found
+
+**Bugs**
+
+Bug 1:
+Produtos estão sendo criados sempre com o mesmo ID
+
+Bug 2:
+Endpoint GET /auth/products - está exibindo uma mesagem diferente da documentação para o Response - 401 Unauthorized
+
+Documentação:
+{
+    "name": "JsonWebTokenError",
+    "message": "Invalid/Expired Token!"
+}
+
+Resultado da API:
+{
+    "message": "Token Expired!"
+}
+
+Bug 3:
+Endpoint GET /auth/products - ao inserirmos um accessToken inválido, o retorno deveria ser 403 Unauthorized
+- Ma está mostrando 500 Internal Server Error
+
+Documentação:
+accessToken - Inválido, expirado ou inexistente
+{		
+	message: "Authentication Problem"
+}
+
+Resultado da API:
+{
+    "message": "invalid token"
+}
+
+Bug 4:
+
+Endpoint POST /products/add - também mostra sucesso 201 Created se retirar o "s" do "products". ex: /auth/product/add
+
 ## Atualizações
 
 - Acrescentar mais cenários negativos nos testes

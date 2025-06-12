@@ -18,8 +18,9 @@ test_api:
     - main  # ← Garante execução apenas na branch main
   script:
     - echo "Iniciando testes..."
+    - find src/test/java -name "*.java"
+    - mvn clean test || true
     - mkdir -p target
-    - mvn clean test || true  # ← Permite continuar mesmo se algum teste falhar (para salvar o relatório)
     - echo "Listando arquivos na pasta target/"
     - ls -lh target/
     - echo "Buscando extent-report.html..."

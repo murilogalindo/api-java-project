@@ -1,12 +1,12 @@
-# api_project
+# java-api-project
 
-## Plano de Testes – API Sicredi
+## Plano de Testes - API
 
-Este projeto automatiza a validação da API pública da Sicredi, garantindo que seus endpoints estejam funcionais e de acordo com o esperado.
+Este projeto automatiza a validação da API pública, garantindo que seus endpoints estejam funcionais e de acordo com o esperado.
 
 ## Objetivo
 
-Validar os principais endpoints da API da Sicredi, verificando:
+Validar os principais endpoints da API, verificando:
 - Códigos de status HTTP esperados
 - Estrutura e conteúdo das respostas
 - Comportamento em cenários válidos e inválidos

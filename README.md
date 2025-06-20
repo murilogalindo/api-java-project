@@ -77,12 +77,6 @@ src/
 - Foi utilizada a ferramenta ExtentReports
 - Relatório é salvo na pasta target com o nome "extent-report.html"
 
-## CI/CD 
-
-- O projeto foi configurado para rodar na Pipeline
-- A pipeline no GitLab executa automaticamente os testes em cada push na branch main e salva o relatório como artefato.
-- https://gitlab.com/murilogalindo/api_project/-/pipelines
-
 ## Bugs e Melhoras
 
 **Melhorias**
@@ -142,6 +136,7 @@ Endpoint POST /products/add - também mostra sucesso 201 Created se retirar o "s
 
 - Acrescentar mais cenários negativos nos testes
 - Organizar melhor a Suite de testes
+- CI/CD
 
 ## Contato
 
